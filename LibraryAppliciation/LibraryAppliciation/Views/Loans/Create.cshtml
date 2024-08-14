@@ -1,0 +1,18 @@
+﻿@model List<Book>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form action="/Loans/Create" method="post">
+    
+    <select name="BookId">
+        @foreach (Book book in Model)
+        {
+            <option value="@book.Id">@book.Title</option>
+        }
+    </select>
+    <input type="text" name="Name" placeholder="Name" />
+    <button>Save</button>
+</form>

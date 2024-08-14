@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <h2>New Broadcast</h2>
+
+    <form method="post" action="/Home/Broadcast">
+        <textarea name="message"></textarea> <br />
+        <input type="submit" value="post"/>
+    </form>
+</div>

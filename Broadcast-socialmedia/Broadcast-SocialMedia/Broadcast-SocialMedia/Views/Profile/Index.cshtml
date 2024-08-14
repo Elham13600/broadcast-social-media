@@ -1,0 +1,10 @@
+﻿@model ProfileIndexViewModel
+
+<div>
+	<h1>Update Profile</h1>
+
+	<form method="post" action="/Profile/Update">
+		<input value="@Model.Name" name="Name" placeholder="Name" />
+		<input type="submit" valeu="Save" />
+	</form>
+</div>
