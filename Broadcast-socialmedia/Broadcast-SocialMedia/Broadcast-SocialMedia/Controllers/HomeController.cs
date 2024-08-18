@@ -23,6 +23,7 @@ namespace Broadcast_SocialMedia.Controllers
 
         public IActionResult Index()
         {
+
             return View();
         }
 
